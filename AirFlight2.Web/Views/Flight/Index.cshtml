@@ -1,0 +1,105 @@
+﻿@using AirFlight2.Dto.Dtos;
+@model FlightViewModel
+
+ 
+<form method="post" asp-controller="Flight" asp-action="Index">
+     
+
+    <h1>Nereden</h1>
+
+    @Html.DropDownList("drpCountryOrigin",Model.Countries,"--Select Country--",new {@class="form-control"})
+    <br />    
+
+    <select id="drpAirPortOrigin" class="form-control" name="AirPortOriginId">
+        <option value="">Select Country</option>
+    </select>
+    @Html.ValidationMessageFor(x=> x.AirPortOriginId)
+
+    <hr />
+    <h1>Nereye</h1>
+
+    @Html.DropDownList("drpCountryDestination",Model.Countries,"--Select Country--",new {@class="form-control"})
+    <br />
+
+    <select id="drpAirPortDestination" class="form-control" name="AirPortOriginDestinationId">
+        <option value="">Select Country</option>
+    </select>
+    @Html.ValidationMessageFor(x => x.AirPortOriginDestinationId)
+
+    <hr />
+    <br />
+
+    <label>Gidiş :</label>
+    <input type="date" id="txtDateDeparture" name="DateDeparture" />
+    @Html.ValidationMessageFor(x => x.DateDeparture)
+    <br />
+    <br />
+
+    <label>Dönüş :</label>
+    <input type="date" id="txtDateReturn" name="DateReturn" />
+    @Html.ValidationMessageFor(x => x.DateReturn)
+
+    <br />
+    <br />
+    <hr /> 
+
+    <button class="btn btn-success" type="submit">Search</button>
+</form>
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+
+    $(function () {
+
+        $('#drpCountryOrigin').change(function () {
+           
+            var id = $('#drpCountryOrigin').val();
+            //console.log(id);
+            $.ajax({
+                url: '/Flight/GetAirportsByCountryId',
+                data: { id: id },
+                type: 'POST',
+                dataType: 'Json',
+                success: function (data) {
+                    //console.log(data);
+                    $('#drpAirPortOrigin').empty();
+
+                    for (var i = 0; i < data.length; i++) {
+                        $('#drpAirPortOrigin').append("<option value='" + data[i].id + "'>" + data[i].airPortName + "</option>");
+                    }
+                }
+            });
+
+
+        });
+
+        $('#drpCountryDestination').change(function () {
+
+            var id = $('#drpCountryDestination').val();
+            console.log(id);
+            $.ajax({
+                url: '/Flight/GetAirportsByCountryId',
+                data: { id: id },
+                type: 'POST',
+                dataType: 'Json',
+                success: function (data) {
+                    //console.log(data);
+                    $('#drpAirPortDestination').empty();
+
+                    for (var i = 0; i < data.length; i++) {
+                        $('#drpAirPortDestination').append("<option value='" + data[i].id + "'>" + data[i].airPortName + "</option>");
+                    }
+                }
+            });
+
+
+        });
+
+
+    });
+
+</script>

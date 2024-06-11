@@ -1,0 +1,57 @@
+﻿@model FlightDetailViewModel
+
+
+<h1>FlightDetail</h1>
+<br />
+<h6>Nereden</h6>
+<div class="row">
+    <div class="col-6">
+        @Model.CountryOrigin
+    </div>
+    <div class="col-6">
+        @Model.AirPortOrigin
+    </div>
+
+</div>
+
+<h6>Nereye</h6>
+<div class="row">
+    <div class="col-6">
+        @Model.CountryDestination
+    </div>
+    <div class="col-6">
+        @Model.AirPortDestination
+    </div>
+
+</div>
+
+
+<br />
+<hr /> 
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">DepartureTime</th>
+            <th scope="col">ArrivalTime</th>
+            <th scope="col">FlightNumber</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.FlightOptions)
+        {
+            <tr>
+                <td>@item.DepartureDateTime</td>
+                <td>@item.ArrivalDateTime</td>
+                <td>@item.FlightNumber</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="/Flight/Index">Yeni Rezervasyon</a>

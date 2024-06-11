@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirFlight2.Api", "AirFlight2.Api\AirFlight2.Api.csproj", "{884F746D-8CD4-498D-BB39-45D5E5C744B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirFlight2.Entities", "AirFlight2.Entities\AirFlight2.Entities.csproj", "{F0DBF6BA-B13B-4928-923E-CCD888C9EE88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirFlight2.Dto", "AirFlight2.Dto\AirFlight2.Dto.csproj", "{9F0157A3-5CB1-43E5-A23F-2D0863A4649D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirFlight2.Core", "AirFlight2.Core\AirFlight2.Core.csproj", "{0CDC3388-41D0-466F-983F-78090E1C5DC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirFlight2.Repository", "AirFlight2.Repository\AirFlight2.Repository.csproj", "{34E3BBF2-FF03-40C0-9DC6-820A2B2EE680}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirFlight2.Service", "AirFlight2.Service\AirFlight2.Service.csproj", "{0F9BBA4E-79C4-4E19-B8DE-A9750BE52469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirFlight2.Web", "AirFlight2.Web\AirFlight2.Web.csproj", "{81E79EDB-3D6C-4A61-BEC4-EB652289A957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{884F746D-8CD4-498D-BB39-45D5E5C744B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884F746D-8CD4-498D-BB39-45D5E5C744B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884F746D-8CD4-498D-BB39-45D5E5C744B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884F746D-8CD4-498D-BB39-45D5E5C744B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DBF6BA-B13B-4928-923E-CCD888C9EE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DBF6BA-B13B-4928-923E-CCD888C9EE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DBF6BA-B13B-4928-923E-CCD888C9EE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DBF6BA-B13B-4928-923E-CCD888C9EE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0157A3-5CB1-43E5-A23F-2D0863A4649D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0157A3-5CB1-43E5-A23F-2D0863A4649D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0157A3-5CB1-43E5-A23F-2D0863A4649D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0157A3-5CB1-43E5-A23F-2D0863A4649D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDC3388-41D0-466F-983F-78090E1C5DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDC3388-41D0-466F-983F-78090E1C5DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDC3388-41D0-466F-983F-78090E1C5DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDC3388-41D0-466F-983F-78090E1C5DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E3BBF2-FF03-40C0-9DC6-820A2B2EE680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E3BBF2-FF03-40C0-9DC6-820A2B2EE680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E3BBF2-FF03-40C0-9DC6-820A2B2EE680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E3BBF2-FF03-40C0-9DC6-820A2B2EE680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9BBA4E-79C4-4E19-B8DE-A9750BE52469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9BBA4E-79C4-4E19-B8DE-A9750BE52469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9BBA4E-79C4-4E19-B8DE-A9750BE52469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9BBA4E-79C4-4E19-B8DE-A9750BE52469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E79EDB-3D6C-4A61-BEC4-EB652289A957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E79EDB-3D6C-4A61-BEC4-EB652289A957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E79EDB-3D6C-4A61-BEC4-EB652289A957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E79EDB-3D6C-4A61-BEC4-EB652289A957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C98F944-747D-46AD-9005-FC01D4E0333F}
+	EndGlobalSection
+EndGlobal
